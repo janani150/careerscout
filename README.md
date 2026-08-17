@@ -1,8 +1,9 @@
 # careerscout
 
+```text
 AI-Career-Opportunity-Discovery/
 │
-├── frontend/                         # React Frontend
+├── frontend/                  # React Frontend
 │   ├── public/
 │   │   └── favicon.ico
 │   │
@@ -51,22 +52,17 @@ AI-Career-Opportunity-Discovery/
 │   ├── package.json
 │   └── vite.config.js
 │
-│
-├── backend/                          # Flask Backend
-│   │
+├── backend/                   # Flask Backend
 │   ├── app/
 │   │   ├── __init__.py
-│   │   │
 │   │   ├── config/
 │   │   │   └── config.py
-│   │   │
 │   │   ├── models/
 │   │   │   ├── user.py
 │   │   │   ├── job.py
 │   │   │   ├── company.py
 │   │   │   ├── resume.py
 │   │   │   └── application.py
-│   │   │
 │   │   ├── routes/
 │   │   │   ├── auth_routes.py
 │   │   │   ├── user_routes.py
@@ -74,43 +70,31 @@ AI-Career-Opportunity-Discovery/
 │   │   │   ├── resume_routes.py
 │   │   │   ├── recommendation_routes.py
 │   │   │   └── application_routes.py
-│   │   │
 │   │   ├── services/
 │   │   │   ├── resume_service.py
 │   │   │   ├── recommendation_service.py
 │   │   │   └── application_service.py
-│   │   │
 │   │   ├── scraper/
 │   │   │   ├── base_scraper.py
 │   │   │   ├── company_scraper.py
 │   │   │   ├── scraper_manager.py
 │   │   │   └── cleaners.py
-│   │   │
 │   │   ├── ai/
 │   │   │   ├── resume_parser.py
 │   │   │   ├── skill_extractor.py
 │   │   │   ├── job_matcher.py
 │   │   │   └── skill_gap.py
-│   │   │
 │   │   ├── utils/
 │   │   │   ├── auth.py
 │   │   │   ├── validators.py
 │   │   │   └── helpers.py
-│   │   │
 │   │   └── extensions.py
 │   │
 │   ├── migrations/
-│   │
 │   ├── tests/
-│   │   ├── test_auth.py
-│   │   ├── test_jobs.py
-│   │   ├── test_scraper.py
-│   │   └── test_recommendation.py
-│   │
 │   ├── requirements.txt
 │   ├── run.py
 │   └── .env
-│
 │
 ├── database/
 │   ├── schema.sql
@@ -120,7 +104,7 @@ AI-Career-Opportunity-Discovery/
 │   ├── raw/
 │   └── processed/
 │
-├── docs/                             # Project Report
+├── docs/
 │   ├── project_report.docx
 │   ├── literature_survey/
 │   ├── diagrams/
@@ -134,3 +118,4 @@ AI-Career-Opportunity-Discovery/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```

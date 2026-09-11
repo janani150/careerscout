@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#203243", "tertiary-fixed": "#94f990", "on-primary-fixed-variant": "#4e3f6d", "inverse-on-surface": "#e8f2ff", "on-primary-fixed": "#21123f", "error": "#ba1a1a", "secondary": "#006b5f", "on-primary": "#ffffff", "on-error": "#ffffff", "primary-fixed-dim": "#d1bef5", "surface-container-highest": "#d1e4fb", "surface-tint": "#665686", "on-secondary-fixed-variant": "#005048", "primary-container": "#4a3b69", "on-primary-container": "#baa7dd", "surface-container": "#e3efff", "on-secondary-container": "#007165", "tertiary-container": "#004f12", "tertiary-fixed-dim": "#78dc77", "surface": "#f7f9ff", "on-surface-variant": "#49454e", "on-secondary": "#ffffff", "tertiary": "#003609", "surface-variant": "#d1e4fb", "on-surface": "#091d2e", "outline-variant": "#cbc4cf", "on-error-container": "#93000a", "on-background": "#091d2e", "background": "#f7f9ff", "primary": "#332551", "secondary-fixed": "#8df5e4", "on-tertiary-fixed-variant": "#005313", "secondary-fixed-dim": "#70d8c8", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "outline": "#7a757f", "on-tertiary-container": "#62c563", "on-tertiary-fixed": "#002204", "surface-container-high": "#d9eaff", "inverse-primary": "#d1bef5", "on-secondary-fixed": "#00201c", "primary-fixed": "#eaddff", "surface-dim": "#c9dcf3", "surface-container-low": "#edf4ff", "surface-container-lowest": "#ffffff", "surface-bright": "#f7f9ff", "secondary-container": "#8df5e4" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-desktop": "1.5rem", "margin-mobile": "1rem", "space-4": "1rem", "space-2": "0.5rem", "space-10": "2.5rem", "space-16": "4rem", "space-5": "1.25rem", "space-8": "2rem", "margin-tablet": "2rem", "max-width": "1440px", "gutter-tablet": "1.5rem", "space-3": "0.75rem", "margin-desktop": "3rem", "space-12": "3rem", "space-1": "0.25rem", "space-6": "1.5rem", "gutter-mobile": "1rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "caption": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest border-b border-primary-fixed/40 shadow-[0_1px_8px_rgba(74,59,105,0.04)] z-50 flex items-center justify-between px-space-6"><div class="flex items-center gap-space-3 w-60"><img alt="CareerScout AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XtOxgGct6DS5jKaNPZMmbzCZXaFyHABzsvERTgpTcAjN_Ft8wRpal_HbAN0xthTyCSfGM_-Yfx13KvRf5jYAOogfCwDCbBWBkEdY3qmbHZrysWzUUyrFFvxUZbgDv03pPvewV2gEVTNzRQdaCmZQ7Kxda607Tt26g-QMfR1Txvcl77yohxh3QXNx2SlB9pKGrNAqD2SOpzOZU8mVaJm8clB6uKFXX_GTVAdOZsHBQxk6vONHKUQFKZKhg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CareerScout</span><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full">AI</span></div><div class="flex-1 max-w-md mx-auto hidden md:flex items-center"><div class="relative w-full max-w-[320px] mx-auto"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 bg-surface rounded-lg border border-outline-variant/60 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:border-secondary transition-all" placeholder="Search jobs, companies, skills..." type="text"/></div></div><div class="flex items-center gap-space-4"><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error font-label-sm text-[10px] leading-tight rounded-full flex items-center justify-center font-bold">3</span></button><div class="h-6 w-[1px] bg-outline-variant/60"></div><div class="flex items-center gap-space-3"><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-1 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPqdTImLtpZz08-Nkadzrlelq56m2Mpb_MpcZd_lCSjHd2thUnwPuVFo7WZVzSTQmK3M8ASd2bJoD_2ZBvMAUn6MVgI8QZprMcvJjidzDuwg7ICqnKLZVUQZiPMSPd7g4gDGhnh_wTx0FNNICfm0Wr73BwpzxExBmfjzn2PZVhWZgGmf0-gSC9VRGkXQV9ugoHTtacITQ6MRJVMR4jYFXNvtUsCJpQslIPWQMwwPaMxMhYVJmj65_Q"/><div class="hidden sm:flex flex-col text-left"><span class="font-title-sm text-title-sm text-on-surface leading-none">Elena Vance</span><span class="font-caption text-caption text-on-surface-variant mt-0.5">Product Designer</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-60 bg-surface-container-lowest border-r border-primary-fixed/40 z-40 flex flex-col justify-between p-space-4"><nav class="flex flex-col gap-1" data-active-classes="bg-primary-fixed/30 text-secondary border-l-4 border-secondary font-title-sm"><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">home</span><span>Dashboard</span></div></a><a aria-current="page" class="flex items-center justify-between px-3 py-2.5 rounded-r-lg transition-all bg-primary-fixed/30 text-secondary border-l-4 border-secondary font-title-sm" data-path="browse-jobs" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">work</span><span>Browse Jobs</span></div><span class="font-label-sm text-label-sm bg-surface-container text-on-surface px-2 py-0.5 rounded-full">1.2k</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-applications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">check_circle</span><span>My Applications</span></div><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">4</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="recommendations" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">lightbulb</span><span>Recommendations</span></div><span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded-full flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">auto_awesome</span>95%</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="my-resume" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">description</span><span>My Resume</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="skill-analysis" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">track_changes</span><span>Skill Analysis</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="profile" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">person</span><span>Profile</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-r-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></div></a></nav><div class="bg-surface-container-low border border-primary-fixed/60 rounded-xl p-space-4"><div class="flex items-center justify-between mb-2"><span class="font-label-sm text-label-sm text-primary font-bold">Career Readiness</span><span class="font-title-sm text-title-sm text-secondary font-bold">92%</span></div><div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mb-3"><div class="h-full bg-secondary rounded-full" style="width: 92%"></div></div><a class="inline-block font-label-sm text-label-sm text-secondary hover:text-on-secondary-container underline underline-offset-2 transition-colors" data-path="settings" href="#">Update Preferences</a></div></aside><div class="pl-60"><main class="w-full pt-16 p-space-8 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full gap-space-6 pb-space-12">
+<!-- Top Context Navigation -->
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-space-2 text-on-surface-variant hover:text-primary transition-colors font-title-sm text-title-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Opportunity Stream</span>
+</a>
+<div class="flex items-center gap-space-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Opportunity ID: #STR-8842-AI</span>
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active &amp; Actively Sourcing</span>
+</div>
+</div>
+<!-- Header Banner -->
+<section class="w-full bg-primary-fixed/25 rounded-xl p-space-6 shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-6">
+<div class="flex items-start sm:items-center gap-space-5">
+<!-- Stripe Company Emblem -->
+<div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center shadow-md flex-shrink-0">
+<span class="font-headline-lg text-headline-lg text-on-primary font-bold tracking-tight">S</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-3 flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Senior AI Product Designer</h1>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Opportunity
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Stripe • San Francisco, CA (Hybrid) • Posted 2 days ago
+          </p>
+<div class="flex items-center gap-space-2 mt-space-3 flex-wrap">
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-semibold shadow-sm">
+              Full-Time
+            </span>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-semibold shadow-sm">
+              $165,000 - $195,000 USD / year
+            </span>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-semibold shadow-sm">
+              Equity: 0.05% - 0.1%
+            </span>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container text-on-surface-variant">
+              Tier 1 Sponsoring
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Pill Group -->
+<div class="flex sm:items-center gap-space-3 w-full lg:w-auto justify-end">
+<button class="inline-flex items-center justify-center gap-space-2 px-space-4 py-2.5 rounded-lg bg-surface-container-lowest text-secondary font-title-sm text-title-sm shadow-sm hover:bg-surface-container-low transition-all" id="saveJobBtn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span id="saveText">Saved to Wishlist</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 2-Column Responsive Workspace Grid (8 cols left / 4 cols right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-8 items-start">
+<!-- Left Column: Role Details Deep Dive (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-6 min-w-0">
+<!-- Card 1: Role Overview & Impact -->
+<article class="bg-surface-container-lowest rounded-xl p-space-6 shadow-sm">
+<div class="flex items-center gap-space-2 mb-space-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">target</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-wide">Role Overview &amp; Impact</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Stripe is creating sovereign programmatic economic infrastructure for artificial intelligence. As our Senior AI Product Designer, you will spearhead interface design across high-volume checkout autonomy, agentic financial permissions, and human-in-the-loop auditability.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-3 leading-relaxed">
+          You will translate probabilistic multi-agent models into predictable, deterministic UI paradigms that give global enterprises uncompromised visibility and security over financial operations.
+        </p>
+</article>
+<!-- Key Focus Visual Showcase -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-4">
+<div class="bg-surface-container-lowest rounded-xl p-space-5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-3">
+<span class="font-title-sm text-title-sm text-primary">Autonomous Commerce Workflows</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">account_tree</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-3">
+            Architecting high-consequence state machines where AI copilot actions seamlessly transfer ownership to human finance directors.
+          </p>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-3">
+<span class="font-title-sm text-title-sm text-primary">LLM Latency &amp; Confidence UX</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-3">
+            Pioneering fluid streaming feedback states, micro-confidence gauges, and generative fallback fallbacks for real-time transactions.
+          </p>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 94%"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: What You Will Do -->
+<article class="bg-surface-container-lowest rounded-xl p-space-6 shadow-sm">
+<div class="flex items-center gap-space-2 mb-space-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">checklist</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-wide">What You Will Do</h2>
+</div>
+<ul class="flex flex-col gap-space-4">
+<li class="flex items-start gap-space-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Partner with AI researchers and foundation engineers</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">Translate complex multi-agent inference flows into transparent, intuitive UI abstractions that preserve user control during rapid autonomous transactions.</span>
+</div>
+</li>
+<li class="flex items-start gap-space-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Lead end-to-end systemic design</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">Direct workflow progression from foundational customer discovery and low-fidelity specs to production-ready design system tokens built inside Stripe's design ecosystem.</span>
+</div>
+</li>
+<li class="flex items-start gap-space-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Establish company-wide AI interaction guidelines</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">Standardize visual representations for latency, streaming token telemetry, hallucination prevention warnings, and varying agent confidence thresholds.</span>
+</div>
+</li>
+<li class="flex items-start gap-space-3">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Drive continuous usability cycles</span>
+<span class="font-body-md text-body-md text-on-surface-variant mt-0.5">Iterate rapidly through quantitative customer observation sessions, prototype stress-testing, and rigorous qualitative UX telemetry.</span>
+</div>
+</li>
+</ul>
+</article>
+<!-- Card 3: Skills & Qualifications Required -->
+<article class="bg-surface-container-lowest rounded-xl p-space-6 shadow-sm">
+<div class="flex items-center justify-between mb-space-4">
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">neurology</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-wide">Skills &amp; Qualifications</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded-full font-semibold">5 of 6 Skills Matched</span>
+</div>
+<div class="flex flex-wrap gap-space-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Design Systems (Expert)
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Figma Components &amp; Tokens
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Generative UI / LLM UX
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            User Research &amp; Prototyping
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            Web Standards &amp; CSS/HTML Awareness
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md">
+            Python &amp; API Integration Familiarity
+          </span>
+</div>
+</article>
+<!-- Card 4: About Stripe & Workplace -->
+<article class="bg-surface-container-lowest rounded-xl p-space-6 shadow-sm flex flex-col gap-space-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">apartment</span>
+<h2 class="font-title-md text-title-md text-primary uppercase tracking-wide">About Stripe</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Founded 2010</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Stripe is a technology company that builds economic infrastructure for the internet. Businesses of every size—from new startups to public companies—use our software to accept payments and manage their businesses online.
+        </p>
+<!-- Company Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-3 pt-space-2">
+<div class="bg-surface-container-low rounded-lg p-space-3 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Company Scale</span>
+<span class="font-title-md text-title-md text-primary font-bold mt-1">7,000+</span>
+<span class="font-caption text-caption text-on-surface-variant">Global workforce</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-3 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Glassdoor Rating</span>
+<span class="font-title-md text-title-md text-secondary font-bold mt-1">4.4 ★</span>
+<span class="font-caption text-caption text-on-surface-variant">89% approve of CEO</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-3 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status</span>
+<span class="font-title-md text-title-md text-primary font-bold mt-1">Fintech Leader</span>
+<span class="font-caption text-caption text-on-surface-variant">Pre-IPO / Private</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-3 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Office Presence</span>
+<span class="font-title-md text-title-md text-primary font-bold mt-1">SF Hybrid</span>
+<span class="font-caption text-caption text-on-surface-variant">2 days / week in-office</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Column: Sticky AI Match Breakdown & CTA Action Suite (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-6 sticky top-20 min-w-0">
+<!-- AI Match Scorecard -->
+<section class="bg-primary-fixed/20 rounded-xl p-space-6 shadow-sm flex flex-col gap-space-5">
+<!-- Header & Circular Score Donut -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">CareerScout AI</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Candidate Fit Profile</h3>
+</div>
+<!-- Inline Circular Progress SVG Gauge -->
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="96, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-title-sm text-title-sm font-bold text-secondary">96%</span>
+</div>
+</div>
+</div>
+<!-- Breakdown Dimension Meters -->
+<div class="flex flex-col gap-space-3 bg-surface-container-lowest/80 rounded-lg p-space-4 shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Skills &amp; Competencies</span>
+<span class="text-secondary font-bold">98%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 98%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Experience &amp; Leadership</span>
+<span class="text-secondary font-bold">95%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Location &amp; Work Model</span>
+<span class="text-secondary font-bold">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">Compensation Bracket</span>
+<span class="text-secondary font-bold">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</div>
+<!-- Why You Match Narrative Highlights -->
+<div class="flex flex-col gap-space-2">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Algorithmic Match Highlights</span>
+<div class="flex flex-col gap-space-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-space-2">
+<span class="text-secondary font-bold">✓</span>
+<span>Direct alignment with Stripe's modular Design System philosophy.</span>
+</div>
+<div class="flex items-start gap-space-2">
+<span class="text-secondary font-bold">✓</span>
+<span>5+ years orchestrating complex enterprise web applications.</span>
+</div>
+<div class="flex items-start gap-space-2">
+<span class="text-secondary font-bold">✓</span>
+<span>Documented portfolio case studies in autonomous copilot UX.</span>
+</div>
+</div>
+</div>
+<!-- Minor Gap Banner -->
+<div class="bg-surface-container-lowest/90 rounded-lg p-space-3 flex items-start gap-space-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-error mt-0.5">info</span>
+<div class="flex flex-col font-caption text-caption text-on-surface-variant">
+<span class="font-semibold text-on-surface">Minor Gap Detected: Python/API integration</span>
+<span>Desirable for prompt playground prototyping, but designated as non-blocking by hiring team.</span>
+</div>
+</div>
+</section>
+<!-- Primary Action CTA Container -->
+<section class="bg-surface-container-lowest rounded-xl p-space-6 shadow-sm flex flex-col gap-space-4">
+<!-- 1-Click Primary Action -->
+<button class="w-full h-14 bg-secondary hover:bg-on-secondary-fixed-variant text-on-primary font-title-md text-title-md rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-2" id="applyBtn">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Apply with 1-Click AI Resume</span>
+</button>
+<!-- Secondary Customization Action -->
+<button class="w-full h-11 bg-surface-container-lowest hover:bg-surface-container-low text-secondary font-title-sm text-title-sm rounded-lg transition-all flex items-center justify-center gap-space-2" id="customizeBtn">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Customize Cover Letter with AI</span>
+</button>
+<!-- Mutual Connections Recruiter Note -->
+<div class="flex items-center gap-space-3 pt-space-2">
+<div class="flex -space-x-2 overflow-hidden flex-shrink-0">
+<div class="inline-block h-8 w-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+              TL
+            </div>
+<div class="inline-block h-8 w-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm shadow-sm">
+              MK
+            </div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-tight">
+<strong class="text-on-surface">2 mutual connections</strong> in your direct network work at Stripe Design.
+          </p>
+</div>
+<div class="pt-space-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">lock</span>
+            Confidential Candidate Mode
+          </span>
+<span>Avg response: 48h</span>
+</div>
+</section>
+</aside></div>
+</div>
+</main></div>
+<script>
+  // Micro-interactions for primary controls
+  const saveBtn = document.getElementById('saveJobBtn');
+  const saveText = document.getElementById('saveText');
+  let isSaved = true;
+
+  if (saveBtn && saveText) {
+    saveBtn.addEventListener('click', () => {
+      isSaved = !isSaved;
+      if (isSaved) {
+        saveText.innerText = 'Saved to Wishlist';
+        saveBtn.classList.remove('opacity-70');
+      } else {
+        saveText.innerText = 'Save to Wishlist';
+        saveBtn.classList.add('opacity-70');
+      }
+    });
+  }
+
+  const applyBtn = document.getElementById('applyBtn');
+  if (applyBtn) {
+    applyBtn.addEventListener('click', () => {
+      applyBtn.innerHTML = `
+        <span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span>
+        <span>Submitting Dossier...</span>
+      `;
+      setTimeout(() => {
+        applyBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">check</span>
+          <span>Application Dispatched!</span>
+        `;
+        applyBtn.classList.remove('bg-secondary');
+        applyBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+      }, 1200);
+    });
+  }
+
+  const customizeBtn = document.getElementById('customizeBtn');
+  if (customizeBtn) {
+    customizeBtn.addEventListener('click', () => {
+      customizeBtn.innerHTML = `
+        <span class="material-symbols-outlined animate-pulse text-[18px]">auto_fix_high</span>
+        <span>Synthesizing Cover Letter...</span>
+      `;
+      setTimeout(() => {
+        customizeBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[18px]">description</span>
+          <span>View Tailored Pitch Draft</span>
+        `;
+      }, 1000);
+    });
+  }
+</script></body></html>

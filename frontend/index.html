@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerScout AI - AI-Powered Career Opportunity Discovery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#203243",
+              "tertiary-fixed": "#94f990",
+              "on-primary-fixed-variant": "#4e3f6d",
+              "inverse-on-surface": "#e8f2ff",
+              "on-primary-fixed": "#21123f",
+              error: "#ba1a1a",
+              secondary: "#006b5f",
+              "on-primary": "#ffffff",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#d1bef5",
+              "surface-container-highest": "#d1e4fb",
+              "surface-tint": "#665686",
+              "on-secondary-fixed-variant": "#005048",
+              "primary-container": "#4a3b69",
+              "on-primary-container": "#baa7dd",
+              "surface-container": "#e3efff",
+              "on-secondary-container": "#007165",
+              "tertiary-container": "#004f12",
+              "tertiary-fixed-dim": "#78dc77",
+              surface: "#f7f9ff",
+              "on-surface-variant": "#49454e",
+              "on-secondary": "#ffffff",
+              tertiary: "#003609",
+              "surface-variant": "#d1e4fb",
+              "on-surface": "#091d2e",
+              "outline-variant": "#cbc4cf",
+              "on-error-container": "#93000a",
+              "on-background": "#091d2e",
+              background: "#f7f9ff",
+              primary: "#332551",
+              "secondary-fixed": "#8df5e4",
+              "on-tertiary-fixed-variant": "#005313",
+              "secondary-fixed-dim": "#70d8c8",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              outline: "#7a757f",
+              "on-tertiary-container": "#62c563",
+              "on-tertiary-fixed": "#002204",
+              "surface-container-high": "#d9eaff",
+              "inverse-primary": "#d1bef5",
+              "on-secondary-fixed": "#00201c",
+              "primary-fixed": "#eaddff",
+              "surface-dim": "#c9dcf3",
+              "surface-container-low": "#edf4ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f7f9ff",
+              "secondary-container": "#8df5e4",
+            },
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            spacing: {
+              "gutter-desktop": "1.5rem",
+              "margin-mobile": "1rem",
+              "space-4": "1rem",
+              "space-2": "0.5rem",
+              "space-10": "2.5rem",
+              "space-16": "4rem",
+              "space-5": "1.25rem",
+              "space-8": "2rem",
+              "margin-tablet": "2rem",
+              "max-width": "1440px",
+              "gutter-tablet": "1.5rem",
+              "space-3": "0.75rem",
+              "margin-desktop": "3rem",
+              "space-12": "3rem",
+              "space-1": "0.25rem",
+              "space-6": "1.5rem",
+              "gutter-mobile": "1rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #f7f9ff;
+        color: #091d2e;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f7f9ff;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbc4cf;
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7a757f;
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-surface antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
